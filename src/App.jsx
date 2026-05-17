@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 // Customer Side Pages
 import LandingPage from './pages/customer/LandingPage';
@@ -20,7 +20,7 @@ import AdminSettings from './pages/admin/AdminSettings';
 
 function App() {
   return (
-    <Router basename="/YantoCut">
+    <Router>
       <Routes>
         {/* Customer Routing */}
         <Route path="/" element={<LandingPage />} />
