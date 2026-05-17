@@ -20,7 +20,7 @@ import AdminSettings from './pages/admin/AdminSettings';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/YantoCut">
       <Routes>
         {/* Customer Routing */}
         <Route path="/" element={<LandingPage />} />
